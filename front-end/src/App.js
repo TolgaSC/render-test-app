@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [headline, setHeadline] = useState();
   useEffect(() => {
-    fetch("http://localhost:3001/api/test")
+    fetch("/api/test")
       .then((resp) => resp.json())
       .then((data) => {
         setHeadline(data.headline);
