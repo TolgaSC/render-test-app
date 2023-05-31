@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>{headline}</h1>
-        <h2>Hey</h2>
+        <h2>H</h2>
       </header>
     </div>
   );
