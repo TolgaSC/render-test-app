@@ -17,9 +17,9 @@ app.get("/api/test", (req, res) => {
 // alle requests gehen weiter auf Proxy (package.json[proxy])
 // response geht zurück als port :3000 anstatt :3001
 // Und dann ist der Browser (CORS) glücklich
-app.all((req, res) => {
-  fetch("http:localhost:3001" + req.url).then((data) => res.send(data));
-});
+// app.all((req, res) => {
+//   fetch("http:localhost:3001" + req.url).then((data) => res.send(data));
+// });
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
